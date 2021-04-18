@@ -1,0 +1,60 @@
+name: flutter_template
+description: A Flutter Template
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  # dependencies for DI.
+  get_it: ^5.0.6
+
+  # dependencies for state management.
+  flutter_bloc: ^6.1.2
+
+  # dependencies for local data storage.
+  hive: ^1.4.4+1
+  hive_flutter: ^0.3.1
+
+  # dependencies for 3rd party helpers.
+  intl: ^0.16.1
+  dio: ^3.0.10
+  equatable: ^1.2.6
+  device_info: ^1.0.0
+  package_info: ^0.4.3+4
+  image_picker: ^0.6.7+22
+  http_parser: ^3.1.4
+  image: ^2.1.19
+  path: ^1.7.0
+  path_provider: ^1.6.27
+  url_launcher: ^5.7.10
+  logger: ^0.9.4
+
+  # dependencies for 3rd party widgets.
+  fluro: ^1.7.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+  fonts:
+      - family: SandollGothic
+        fonts:
+          - asset: assets/fonts/SDGtNeoCondTTF-eMd.ttf
+            weight: 500
+          - asset: assets/fonts/SDGtNeoCondTTF-gBd.ttf
+            weight: 700
+  assets:
+    - assets/images/
+
+flutter_intl:
+  enabled: true
+
